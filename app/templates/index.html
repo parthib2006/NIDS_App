@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI-Based Network Intrusion Detection System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="soc-wrapper">
+
+    <header class="soc-header">
+        <h1>AI Network Intrusion Detection System</h1>
+        <p>Session-Level Threat Analysis Dashboard</p>
+    </header>
+
+    <section class="soc-panel">
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label>Packet Count
+                <input type="number" id="packet_count"></label>
+            </div>
+
+            <div class="form-group">
+                <label>Total Bytes
+                <input type="number" id="total_bytes"></label>
+            </div>
+
+            <div class="form-group">
+                <label>Session Duration (s)
+                <input type="number" id="duration"></label>
+            </div>
+
+            <div class="form-group">
+                <label>Protocol (6=TCP, 17=UDP)
+                <input type="number" id="protocol"></label>
+            </div>
+
+            <div class="form-group">
+                <label>TCP SYN Count
+                <input type="number" id="tcp_syn_count"></label>
+            </div>
+
+            <div class="form-group">
+                <label>TCP FIN Count
+                <input type="number" id="tcp_fin_count"></label>
+            </div>
+
+            <div class="form-group">
+                <label>TCP RST Count
+                <input type="number" id="tcp_rst_count"></label>
+            </div>
+
+            <div class="form-group">
+                <label>Alert Count
+                <input type="number" id="alert_count"></label>
+            </div>
+
+            <div class="form-group">
+                <label>Session Anomaly Count
+                <input type="number" id="session_anomaly_count"></label>
+            </div>
+
+        </div>
+
+        <button class="analyze-btn" onclick="predict()">
+            Analyze Network Session
+        </button>
+
+    </section>
+
+    <section class="soc-result" id="result">
+      <p id="analysis-status">Awaiting analysis...</p>
+      <div id="analysis-output"></div>
+    </section>
+
+    <!-- <div class="results">
+    <h3>Final Verdict: <span id="final">—</span></h3>
+    <p>Isolation Forest: <span id="iso">—</span></p>
+    <p>Random Forest: <span id="rf">—</span></p>
+    </div> -->
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

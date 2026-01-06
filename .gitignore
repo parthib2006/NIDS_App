@@ -1,0 +1,95 @@
+# =========================
+# Node / React
+# =========================
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# TypeScript / React
+# =========================
+*.tsbuildinfo
+.vite/
+.eslintcache
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.env
+.venv/
+venv/
+ENV/
+
+# =========================
+# Jupyter / Data Science
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Packet Capture Files
+# =========================
+*.pcap
+*.pcapng
+*.cap
+
+# =========================
+# Generated Data / Reports
+# =========================
+*.csv
+*.xlsx
+*.log
+*.json
+*.xml
+reports/
+results/
+outputs/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# =========================
+# Build / Cache
+# =========================
+.cache/
+.parcel-cache/
+coverage/
+
+# =========================
+# Secrets / Certificates
+# =========================
+*.pem
+*.crt
+*.key
+secrets/
+certs/
+
+# =========================
+# Misc
+# =========================
+*.tmp
+*.swp
+*.bak
+app/Model/
+Notebook/
